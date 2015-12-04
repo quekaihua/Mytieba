@@ -67,3 +67,19 @@ function V($dir=''){
     $smarty->compile_dir = C('COMPILE_DIR');
     return $smarty;
 }
+
+/**
+ * 返回一个url  'Index/index'=>'?controller=Index&action=index'
+ * @param $url
+ * @return array|string
+ */
+function U($url,$array=array()){
+    $url = explode('/',$url);
+    $url = '?controller='.$url[0].'&action='.$url[1];
+    if($array){
+        foreach($array as $key=>$value){
+            $url .= '&'.$key.'='.$value;
+        }
+    }
+    return $url;
+}

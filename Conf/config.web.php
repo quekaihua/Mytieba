@@ -7,6 +7,9 @@
  */
 //网站配置
 $web_conf = array(
+
+    'TABLE_PRE' => 'tc_',
+
     //smarty配置
     'TEMPLATE_DIR' => 'libs/View/tpl',
     'COMPILE_DIR' => 'libs/View/tpl_c',

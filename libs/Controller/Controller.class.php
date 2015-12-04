@@ -22,17 +22,30 @@ class Controller{
         return $this->_action;
     }
 
-    public function success($msg,$url=''){
+    /**
+     * 成功跳转模板
+     * @param $msg  提示信息
+     * @param string $url  成功后跳转地址  example ?controller=install&action=index
+     * @param int $timeout 时间以秒为单位
+     */
+    public function success($msg,$url='',$timeout=5){
         $smarty = V('public');
-        $data['title'] = 'Tieba Cloud - Install';
+        $data['title'] = 'Tieba Cloud - Success';
         $data['message'] = $msg;
-        $data['url'] = $url;
+        $data['url'] = !empty($url) ? $url : "?controller={$this->getController()}&action={$this->getAction()}";
+        $data['timeout'] = $timeout;
         $smarty->assign('data',$data);
         $smarty->display('success.html');
     }
 
-    public function error($msg){
-        die($msg);
+    public function error($msg,$url='',$timeout=5){
+        $smarty = V('public');
+        $data['title'] = 'Tieba Cloud - Error';
+        $data['message'] = $msg;
+        $data['url'] = !empty($url) ? $url : "?controller={$this->getController()}&action={$this->getAction()}";
+        $data['timeout'] = $timeout;
+        $smarty->assign('data',$data);
+        $smarty->display('success.html');
     }
 
 }

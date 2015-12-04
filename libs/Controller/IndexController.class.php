@@ -8,6 +8,7 @@
 class IndexController extends Controller{
 
     public function index(){
+        die(U('User/login'));
         $smarty = V($this->getController());
         $data['title'] = '贴吧云';
         $smarty->assign('data',$data);

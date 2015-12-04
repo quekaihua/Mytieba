@@ -50,7 +50,7 @@ class InstallController extends Controller{
             $mysql->query('INSERT INTO tc_tmp(count) VALUES(0)');
             $mysql->query('INSERT INTO tc_conf(setting) VALUES("1.5")');
 
-            $this->success('you have succeed to install TiebaCloud,enjoy!');
+            $this->success('you have succeed to install TiebaCloud,enjoy!',U('User/login'));
         }else{
             $this->error('创建文件失败');
         }

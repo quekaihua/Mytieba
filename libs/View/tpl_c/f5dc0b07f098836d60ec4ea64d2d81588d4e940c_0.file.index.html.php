@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-03 16:00:14
+<?php /* Smarty version 3.1.27, created on 2015-12-04 10:34:14
          compiled from "libs\View\tpl\install\index.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:3659565ff68ee5dc03_15884402%%*/
+/*%%SmartyHeaderCode:7925660fba67c3322_16041441%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f5dc0b07f098836d60ec4ea64d2d81588d4e940c' => 
     array (
       0 => 'libs\\View\\tpl\\install\\index.html',
-      1 => 1449129613,
+      1 => 1449129750,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3659565ff68ee5dc03_15884402',
+  'nocache_hash' => '7925660fba67c3322_16041441',
   'variables' => 
   array (
     'data' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_565ff68eeafc96_96516650',
+  'unifunc' => 'content_5660fba68153b7_34246642',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_565ff68eeafc96_96516650')) {
-function content_565ff68eeafc96_96516650 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5660fba68153b7_34246642')) {
+function content_5660fba68153b7_34246642 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '3659565ff68ee5dc03_15884402';
+$_smarty_tpl->properties['nocache_hash'] = '7925660fba67c3322_16041441';
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,7 +49,7 @@ $_smarty_tpl->properties['nocache_hash'] = '3659565ff68ee5dc03_15884402';
                 <li><a href="../index.php">TiebaCloud</a></li>
                 <li class="active">Install</li>
             </ol>
-            <form class="form col-md-12 center-block" method="post"action="index.php?controller=Install&method=install">
+            <form class="form col-md-12 center-block" method="post"action="index.php?controller=Install&action=install">
                 <div class="form-group"><h3>数据库配置</h3>
                     <input name="db_ip" class="form-control input-lg" placeholder="数据库服务器地址">
                 </div>
