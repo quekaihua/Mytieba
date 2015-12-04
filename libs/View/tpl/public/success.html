@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{$data.title}</title>
+    <script>
+        setTimeout(function(){
+            window.location.href='{$data.url}';
+        },3000)
+    </script>
+</head>
+<body>
+    {$data.message}
+    <br/>
+    还有3秒跳转，如果不能跳转，点击这里();
+</body>
+</html>
